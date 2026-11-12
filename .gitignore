@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+#vibe-wise
+.vibe-wise/
+
 # Expo
 .expo/
 dist/
