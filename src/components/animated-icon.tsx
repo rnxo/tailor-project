@@ -97,7 +97,7 @@ const glowKeyframe = new Keyframe({
 
 export function AnimatedIcon() {
   return (
-    <View style={styles.iconContainer}>
+    <View className="z-[100] h-[128px] w-[128px] items-center justify-center">
       <Animated.View entering={glowKeyframe.duration(60 * 1000 * 4)} style={styles.glow}>
         <Image style={styles.glow} source={require('@/assets/images/logo-glow.png')} />
       </Animated.View>
@@ -119,13 +119,6 @@ const styles = StyleSheet.create({
     width: 201,
     height: 201,
     position: 'absolute',
-  },
-  iconContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 128,
-    height: 128,
-    zIndex: 100,
   },
   image: {
     width: 76,
