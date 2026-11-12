@@ -1,14 +1,14 @@
 import data from '@/data/articles.json';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
 
-export function ArticleCard() {
+export default function ArticleCard() {
   return (
     <FlatList
       data={data.articles}
       keyExtractor={(item) => item.id}
       renderItem={({ item }) => (
         <View style={styles.item}>
-          <Text style={styles.title}>{item.title}</Text>
+          <Text className='text-blue-500 font-bold'>{item.title}</Text>
           <Text>{item.source}</Text>
         </View>
       )}

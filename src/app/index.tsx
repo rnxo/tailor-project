@@ -3,6 +3,7 @@ import { Platform, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedIcon } from '@/components/animated-icon';
+import ArticleCard from '@/components/articleCard';
 import { HintRow } from '@/components/hint-row';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -42,6 +43,11 @@ export default function HomeScreen() {
         <ThemedText type="code" style={styles.code}>
           get started
         </ThemedText>
+
+        <ThemedText type="code" style={styles.code}>
+          <ArticleCard />
+        </ThemedText>
+
 
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
           <HintRow
