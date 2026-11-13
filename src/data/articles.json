@@ -2,18 +2,38 @@
   "articles": [
     {
       "id": "1",
-      "title": "test-title",
-      "source": "https://xxxx/1234"
+      "title": "zenn-article",
+      "url": "https://zenn.dev/",
+      "source": "zenn",
+      "publishedAt": "2026-11-10T09:30:00+09:00"
     },
     {
       "id": "2",
-      "title": "test-title",
-      "source": "https://xxxx/1234"
+      "title": "qiita-article",
+      "url": "https://qiita.com/",
+      "source": "qiita",
+      "publishedAt": "2026-11-12T08:15:00+09:00"
     },
     {
       "id": "3",
-      "title": "test-title",
-      "source": "https://xxxx/1234"
+      "title": "note-article",
+      "url": "https://note.com/",
+      "source": "note",
+      "publishedAt": "2026-11-08T21:00:00+09:00"
+    },
+    {
+      "id": "4",
+      "title": "stack-overflow",
+      "url": "https://stackoverflow.com/questions",
+      "source": "stack-overflow",
+      "publishedAt": "2026-11-11T13:45:00+09:00"
+    },
+    {
+      "id": "5",
+      "title": "github",
+      "url": "https://github.com/",
+      "source": "github",
+      "publishedAt": "2026-11-09T18:20:00+09:00"
     }
   ]
 }
