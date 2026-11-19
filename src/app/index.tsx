@@ -1,71 +1,63 @@
-import * as Device from 'expo-device';
-import { Platform } from 'react-native';
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { AnimatedIcon } from '@/components/animated-icon';
+import { getArticles } from '@/api/articles';
 import ArticleCard from '@/components/article-card';
-import { HintRow } from '@/components/hint-row';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { WebBadge } from '@/components/web-badge';
-import { BottomTabInset, Spacing } from '@/constants/theme';
-
-function getDevMenuHint() {
-  if (Platform.OS === 'web') {
-    return <ThemedText type="small">use browser devtools</ThemedText>;
-  }
-  if (Device.isDevice) {
-    return (
-      <ThemedText type="small">
-        shake device or press <ThemedText type="code">m</ThemedText> in terminal
-      </ThemedText>
-    );
-  }
-  const shortcut = Platform.OS === 'android' ? 'cmd+m (or ctrl+m)' : 'cmd+d';
-  return (
-    <ThemedText type="small">
-      press <ThemedText type="code">{shortcut}</ThemedText>
-    </ThemedText>
-  );
-}
+import { BottomTabInset } from '@/constants/theme';
+import type { Article } from '@/types/articles';
+import { sortByNewest } from '@/utils/sort-articles';
 
 export default function HomeScreen() {
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+
+  useEffect(() => {
+    // 取得が終わる前に画面が閉じられたら、state を更新しない
+    let isCancelled = false;
+
+    getArticles()
+      .then((fetched) => {
+        if (isCancelled) return;
+        setArticles(sortByNewest(fetched));
+      })
+      .catch((e: unknown) => {
+        if (isCancelled) return;
+        setError(e instanceof Error ? e : new Error(String(e)));
+      })
+      .finally(() => {
+        if (isCancelled) return;
+        setIsLoading(false);
+      });
+
+    return () => {
+      isCancelled = true;
+    };
+  }, []);
+
   return (
-    <ThemedView className="flex-1 flex-row justify-center">
-      <SafeAreaView
-        className="max-w-content flex-1 items-center gap-three px-four"
-        style={{ paddingBottom: BottomTabInset + Spacing.three }}>
-        <ThemedView className="flex-1 items-center justify-center gap-four px-four">
-          <AnimatedIcon />
-          <ThemedText type="title" className="text-center">
-            Welcome to&nbsp;Expo
-          </ThemedText>
-        </ThemedView>
-
-        <ThemedText type="code" className="uppercase">
-          get started
-        </ThemedText>
-
-        <ThemedText type="code" className="uppercase">
-          <ArticleCard />
-        </ThemedText>
-
-
-        <ThemedView
-          type="backgroundElement"
-          className="gap-three self-stretch rounded-four px-three py-four">
-          <HintRow
-            title="Try editing"
-            hint={<ThemedText type="code">src/app/index.tsx</ThemedText>}
+    <ThemedView className="flex-1">
+      <SafeAreaView className="flex-1" edges={['top']}>
+        {isLoading ? (
+          <ThemedView className="flex-1 items-center justify-center">
+            <ActivityIndicator />
+          </ThemedView>
+        ) : error ? (
+          <ThemedView className="flex-1 items-center justify-center">
+            <ThemedText>記事を読み込めませんでした</ThemedText>
+          </ThemedView>
+        ) : (
+          <FlatList
+            data={articles}
+            keyExtractor={(item) => item.id}
+            renderItem={({ item }) => <ArticleCard article={item} />}
+            contentContainerStyle={{ paddingBottom: BottomTabInset }}
+            ListEmptyComponent={<ThemedText className="p-three">記事がありません</ThemedText>}
           />
-          <HintRow title="Dev tools" hint={getDevMenuHint()} />
-          <HintRow
-            title="Fresh start"
-            hint={<ThemedText type="code">npm run reset-project</ThemedText>}
-          />
-        </ThemedView>
-
-        {Platform.OS === 'web' && <WebBadge />}
+        )}
       </SafeAreaView>
     </ThemedView>
   );
