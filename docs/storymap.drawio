@@ -1,0 +1,154 @@
+<mxfile host="65bd71144e">
+    <diagram id="storymap-tech-sns" name="Page-1">
+        <mxGraphModel dx="1102" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="X等でテック系の情報を収集している人の、技術の進歩がはやすぎて追いつけないを、自分の興味のあるものだけしかないにするための自分専用SNSアプリ" vertex="1">
+                    <mxGeometry height="90" width="360" x="30" y="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="興味を伝える" vertex="1">
+                    <mxGeometry height="60" width="120" x="320" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="情報を集める" vertex="1">
+                    <mxGeometry height="60" width="120" x="590" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="タイムラインを見る" vertex="1">
+                    <mxGeometry height="60" width="120" x="860" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="情報を整理する" vertex="1">
+                    <mxGeometry height="60" width="120" x="1130" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="興味のある技術を&lt;div&gt;登録する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="320" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="情報源を登録する" vertex="1">
+                    <mxGeometry height="60" width="120" x="455" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="新着を取り込む" vertex="1">
+                    <mxGeometry height="60" width="120" x="590" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="興味に合うものだけ&lt;div&gt;残す&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="725" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="アプリを開く" vertex="1">
+                    <mxGeometry height="60" width="120" x="860" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="記事を読む" vertex="1">
+                    <mxGeometry height="60" width="120" x="995" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="読んだものを&lt;div&gt;片付ける&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="1130" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="task-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="合わない情報を&lt;div&gt;減らす&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="1265" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="興味タグを&lt;div&gt;1つだけ入力して&lt;/div&gt;&lt;div&gt;保存する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="320" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="RSSのURLを&lt;div&gt;登録する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="455" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="定期的にRSSから&lt;div&gt;記事を取得する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="590" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="AIが興味タグと&lt;div&gt;照合して選別する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="725" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="選別済みの記事が&lt;div&gt;新しい順にリストで&lt;/div&gt;&lt;div&gt;表示される&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="860" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="タップで元記事を&lt;div&gt;開く&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="995" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="既読にすると&lt;div&gt;タイムラインから消える&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="1130" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="「興味なし」を押すと&lt;div&gt;非表示になる&lt;/div&gt;&lt;div&gt;or&lt;/div&gt;&lt;div&gt;興味度を減らす&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="150" x="1265" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="release-mvp" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" value="ウォーキング&lt;br&gt;スケルトン" vertex="1">
+                    <mxGeometry height="60" width="150" x="120" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="line-backbone-1" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+                    <mxGeometry relative="1" width="80" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="120" y="320" as="sourcePoint"/>
+                        <mxPoint x="1400" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="line-backbone-2" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+                    <mxGeometry relative="1" width="80" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="120" y="330" as="sourcePoint"/>
+                        <mxPoint x="1400" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="line-mvp" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+                    <mxGeometry relative="1" width="80" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="120" y="420" as="sourcePoint"/>
+                        <mxPoint x="1400" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Lzzylyb4G2ZjHjGq5QGd-1" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" value="興味タグ複数対応&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="150" x="120" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="Lzzylyb4G2ZjHjGq5QGd-2" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;" value="通知機能&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="150" x="120" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-tag-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="興味タグを&lt;div&gt;複数登録・削除できる&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="320" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-tag-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="記事ごとに&lt;div&gt;どのタグに合うか&lt;/div&gt;&lt;div&gt;判定する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="725" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-tag-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="タグで絞り込んで&lt;div&gt;表示する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="860" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-tag-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="タグごとに&lt;div&gt;興味度を調整する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="1265" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-notify-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="通知する時間・&lt;div&gt;頻度を設定する&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="320" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-notify-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="マッチ度が高い記事を&lt;div&gt;通知対象にする&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="725" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-notify-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="1日1回まとめて&lt;div&gt;通知が届く&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="860" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="story-notify-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="通知から記事を&lt;div&gt;直接開く&lt;/div&gt;" vertex="1">
+                    <mxGeometry height="60" width="120" x="995" y="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="line-tag" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+                    <mxGeometry relative="1" width="80" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="120" y="525" as="sourcePoint"/>
+                        <mxPoint x="1400" y="525" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="line-notify" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+                    <mxGeometry relative="1" width="80" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="120" y="615" as="sourcePoint"/>
+                        <mxPoint x="1400" y="615" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Lzzylyb4G2ZjHjGq5QGd-11" parent="1" style="whiteSpace=wrap;html=1;" value="エンジニア" vertex="1">
+                    <mxGeometry height="30" width="110" x="320" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="Lzzylyb4G2ZjHjGq5QGd-12" parent="1" style="whiteSpace=wrap;html=1;dashed=1;" value="趣味・勉強したい分野がある人" vertex="1">
+                    <mxGeometry height="30" width="180" x="530" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="Lzzylyb4G2ZjHjGq5QGd-13" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Lzzylyb4G2ZjHjGq5QGd-12" value="">
+                    <mxGeometry relative="1" width="80" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="425" y="114.5" as="sourcePoint"/>
+                        <mxPoint x="505" y="114.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
