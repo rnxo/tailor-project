@@ -12,6 +12,9 @@ dist/
 web-build/
 expo-env.d.ts
 
+# plan docs
+docs/**_PLAN.md
+
 # Native
 .kotlin/
 *.orig.*
