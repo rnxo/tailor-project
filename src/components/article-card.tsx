@@ -1,17 +1,17 @@
-import data from '@/data/articles.json';
-import { FlatList, Text, View } from 'react-native';
+import { Article } from '@/types/articles';
+import { Text, View } from 'react-native';
 
-export default function ArticleCard() {
-  return (
-    <FlatList
-      data={data.articles}
-      keyExtractor={(item) => item.id}
-      renderItem={({ item }) => (
-        <View className="border-b border-[#ddd] p-[16px]">
-          <Text className='text-blue-500 font-bold'>{item.title}</Text>
-          <Text>{item.source}</Text>
-        </View>
-      )}
-    />
-  );
+type ArticleCardProps = {
+  article: Article;
 }
+
+export default function ArticleCard({ article }: ArticleCardProps) {
+  return (
+    <View className="border-b border-[#ddd] p-[16px]">
+      <Text className='text-blue-500 font-bold'>{article.title}</Text>
+      <Text>{article.source}</Text>
+      <Text>{article.publishedAt}</Text>
+    </View>
+  )
+}
+
