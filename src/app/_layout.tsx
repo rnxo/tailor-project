@@ -7,11 +7,13 @@ import { useColorScheme } from 'react-native';
 
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import AppTabs from '@/components/app-tabs';
+import { useAppStateFocus } from '@/hooks/use-app-state-focus';
 import { queryClient } from '@/lib/query-client';
 
 SplashScreen.preventAutoHideAsync();
 
 export default function TabLayout() {
+  useAppStateFocus();
   const colorScheme = useColorScheme();
   return (
     <QueryClientProvider client={queryClient}>
