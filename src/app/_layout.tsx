@@ -1,6 +1,5 @@
 import '@/global.css';
 
-import { queryClient } from '@/libs/query-client';
 import { QueryClientProvider } from '@tanstack/react-query';
 import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
@@ -8,6 +7,7 @@ import { useColorScheme } from 'react-native';
 
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import AppTabs from '@/components/app-tabs';
+import { queryClient } from '@/lib/query-client';
 
 SplashScreen.preventAutoHideAsync();
 
